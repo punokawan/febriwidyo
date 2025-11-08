@@ -2,704 +2,346 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Febrianto Widyoutomo - instagram - github - twitter</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Febrianto Widyoutomo — Backend Developer | Portfolio</title>
+    <meta name="description" content="Portfolio of Febrianto Widyoutomo, Backend Developer at UPT TIK Universitas Negeri Jakarta. Links, projects, and contact." />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="manifest" href="manifest.json" />
+    <!-- Favicon -->
+    <link rel="icon" href="favicon-green.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="content">
-      <div class="con-user" style="background-image: url('26109.jpg');">
-        <div class="avatar">
-          <!-- <img src="avatar.png" alt="" /> -->
-          <!-- <img src="Febrianto.jpg" alt="" /> -->
+    <header class="hero">
+      <div class="container profile">
+        <div class="avatar" aria-hidden="true">
+          <img src="Febrianto1.jpg" alt="Portrait of Febrianto Widyoutomo" loading="lazy" />
         </div>
         <div class="title">
-          <h1>
-              <br> 
-            Febrianto Widyoutomo
-            <br> 
-            <h5><a href="mailto:widyoutomof@gmail.com" style="color: rgb(44, 62, 80);">widyoutomof@gmail.com</a></h5>
-          </h1>
-          <p>
-            Backend Developer <br />
-            <!-- co-founder -->
-            <!-- <a target="_blank" href="#"> -->
-              Unit Pelaksana Teknis TIK Universitas Negeri Jakarta
-            <!-- </a> -->
-            <!-- and
-            <a target="_blank" href="https://lusaxweb.net/">lusaxweb</a> -->
-          </p>
+          <h1>Febrianto Widyoutomo</h1>
+          <div class="role">Software Engineer - Backend Developer</div>
+          <a class="email" href="mailto:widyoutomof@gmail.com" aria-label="Email widyoutomof@gmail.com">
+            <i class='bx bx-envelope'></i>
+            widyoutomof@gmail.com
+          </a>
+          <div class="socials" aria-label="Social links">
+            <a href="https://github.com/punokawan" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            <a href="https://linkedin.com/in/febriwidyo" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://instagram.com/febriwidyo/" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://twitter.com/febri_widyo" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+          </div>
         </div>
       </div>
-      <div class="con-menu">
-        <button onclick="handleClick(event, 'con-links')" class="active">
-          Links
-        </button>
-        <button onclick="handleClick(event, 'con-posts')" class="tooltip">
-          Portofolio
-          <span class="tooltiptext">Coming Soon</span>
-        </button>
-      </div>
-      <div class="con-contents">
-        <div class="con-links">
-          <a target="_blank" href="https://unjac-my.sharepoint.com/:b:/g/personal/widyoutomof_unj_ac_id/EX5B07eWjbxOvf3ZuxyDEMcBPs3Hi3OGe-OvH-lNKGbMmw?e=NwpKZq">
-              <i class="bx bxs-blanket"></i>
-              <span>
-                Curriculum Vitae
-              </span>
-            </a>
-          <a target="_blank" href="https://github.com/punokawan">
-              <i class="bx bxl-github"></i>
-              <span>
-                Github
-              </span>
-            </a>
-          <a target="_blank" href="https://instagram.com/febriwidyo/">
-            <i class="bx bxl-instagram-alt"></i>
-            <span>
-              Instagram
-            </span>
-          </a>
-          <a target="_blank" href="https://linkedin.com/in/febriwidyo">
-            <i class='bx bxl-linkedin-square'></i>
-            <span>
-              LinkedIn
-            </span>
-          </a>
-          <a target="_blank"
-            href="https://unjac-my.sharepoint.com/:f:/g/personal/widyoutomof_unj_ac_id/EvUB1Yto-T1EqWnRdk7Cz-kBn9xzH6LT_AWPB1EdHntt2w">
-            <i class="bx bxs-medal"></i>
-            <span>
-              Training & Courses
-            </span>
-          </a>
-          <a target="_blank" href="https://twitter.com/febri_widyo">
-            <i class="bx bxl-twitter"></i>
-            <span>
-              Twitter
-            </span>
-          </a>
-        </div>
+    <div class="container highlights" aria-label="Key Highlights">
+      <!-- Experience companies -->
+      <a class="chip chip-company" href="#tokopedia" aria-label="Jump to Tokopedia experience">
+        <span class="brand-mix">
+          <img src="Tokopedia.svg" alt="Tokopedia icon" class="brand-icon brand-logo" />
+          <img src="Tokopedia_text.svg" alt="Tokopedia wordmark" class="brand-icon brand-text" />
+        </span>
+        <span class="sr-only">Tokopedia</span>
+      </a>
+      <a class="chip chip-company" href="#bytedance" aria-label="Jump to ByteDance experience">
+        <img src="ByteDance.svg" alt="ByteDance logo" class="brand-icon" />
+        <span class="sr-only">ByteDance</span>
+      </a>
 
-        <div class="con-posts">
-            <a class="post" href="#">
-              <div class="con-file">
-                <img src="SIUKAT.png" alt="" />
-              </div>
+      <!-- Backend engineer highlights -->
+      <a class="chip" href="#tokopedia" aria-label="Jump to Tokopedia experience">
+        <i class='bx bx-rocket'></i> Millions req/day
+      </a>
+      <a class="chip" href="#bytedance" aria-label="Jump to ByteDance experience">
+        <i class='bx bx-data'></i> +35% DB performance
+      </a>
+      <a class="chip" href="#bytedance" aria-label="Jump to ByteDance experience">
+        <i class='bx bx-timer'></i> −25% API latency
+      </a>
+      <a class="chip" href="#upt-tik-unj" aria-label="Jump to UPT TIK UNJ experience">
+        <i class='bx bx-check-shield'></i> 90% data sync accuracy
+      </a>
 
-              <footer>
-                <h3>
-                  <i class="bx bx-world"></i>
-                  Full Stack
-                </h3>
-                <p>
-                  Sistem Informasi Uang Kuliah Tunggal UNJ
-                </p>
-              </footer>
+      <!-- Paper highlight -->
+      <a class="chip chip--green" href="https://priorart.ip.com/IPCOM/000273030?fbclid=PAb21jcANMrWFleHRuA2F" target="_blank" rel="noopener noreferrer" aria-label="Open Tokopedia prior art paper in new tab">
+        <i class='bx bxs-file-doc'></i> Paper: Data propagation framework <span class="sr-only">(opens in new tab)</span>
+      </a>
 
-              <div class="effect"></div>
-            </a>
-            
-            <a class="post" href="#">
-              <div class="con-file">
-                <img src="admin_SIUKAT.png" alt="" />
-              </div>
-
-              <footer>
-                <h3>
-                  <i class="bx bx-world"></i>
-                  Full Stack
-                </h3>
-                <p>
-                  Admin Sistem Informasi Uang Kuliah Tunggal UNJ
-                </p>
-              </footer>
-
-              <div class="effect"></div>
-            </a>
-            
-            <a class="post" href="#">
-              <div class="con-file">
-                <img src="SISCA.png" alt="" />
-              </div>
-
-              <footer>
-                <h3>
-                  <i class="bx bx-world"></i>
-                  Full Stack
-                </h3>
-                <p>
-                  Sistem Seleksi Pascasarjana
-                </p>
-              </footer>
-
-              <div class="effect"></div>
-            </a>
-            
-            <a class="post" href="#">
-              <div class="con-file">
-                <img src="Penmaba_Prestasi.png" alt="" />
-              </div>
-
-              <footer>
-                <h3>
-                  <i class="bx bx-world"></i>
-                  Full Stack
-                </h3>
-                <p>
-                  Penmaba Mandiri Jalur Prestasi Universitas Negeri Jakarta
-                </p>
-              </footer>
-
-              <div class="effect"></div>
-            </a>
-            
-            <a class="post" href="#">
-              <div class="con-file">
-                <img src="Penmaba_Mandiri.png" alt="" />
-              </div>
-
-              <footer>
-                <h3>
-                  <i class="bx bx-world"></i>
-                  Web Service
-                </h3>
-                <p>
-                  Penmaba Mandiri Universitas Negeri Jakarta
-                </p>
-              </footer>
-
-              <div class="effect"></div>
-            </a>
-            
-            <a class="post" href="#">
-              <div class="con-file">
-                <img src="Penmaba_Pasca.png" alt="" />
-              </div>
-
-              <footer>
-                <h3>
-                  <i class="bx bx-world"></i>
-                  Web Service
-                </h3>
-                <p>
-                  Penmaba Mandiri Pascasarjana Universitas Negeri Jakarta
-                </p>
-              </footer>
-
-              <div class="effect"></div>
-            </a>
-            
-            <a class="post" href="#">
-              <div class="con-file">
-                <img src="SIPUTKERAS.png" alt="" />
-              </div>
-
-              <footer>
-                <h3>
-                  <i class="bx bx-world"></i>
-                  Web Service
-                </h3>
-                <p>
-                  Sistem Input Nilai Sementara Universitas Negeri Jakarta
-                </p>
-              </footer>
-
-              <div class="effect"></div>
-            </a>
-            
-            <a class="post" href="#">
-              <div class="con-file">
-                <img src="aplikasi_ujian.png" alt="" />
-              </div>
-
-              <footer>
-                <h3>
-                  <i class="bx bx-world"></i>
-                  Web Service
-                </h3>
-                <p>
-                  Aplikasi Ujian Seleksi Pascasarjana Universitas Negeri Jakarta
-                </p>
-              </footer>
-
-              <div class="effect"></div>
-            </a>
-          
-            <a class="post" href="#">
-              <div class="con-file">
-                <img src="admin_aplikasi_ujian.png" alt="" />
-              </div>
-
-              <footer>
-                <h3>
-                  <i class="bx bx-world"></i>
-                  Full Stack
-                </h3>
-                <p>
-                  Sistem Admin Aplikasi Ujian Seleksi Pascasarjana Universitas Negeri Jakarta
-                </p>
-              </footer>
-
-              <div class="effect"></div>
-            </a>
-            
-            <a class="post" href="#">
-              <div class="con-file">
-                <img src="SIGANG.png" alt="" />
-              </div>
-
-              <footer>
-                <h3>
-                  <i class="bx bx-world"></i>
-                  Full Stack
-                </h3>
-                <p>
-                  Sistem Informasi Magang
-                </p>
-              </footer>
-
-              <div class="effect"></div>
-            </a>
-          
-            <div class="effect"></div>
-          </a>
-        </div>
-      </div>
+      <!-- Primary CTA -->
+      <a class="btn-cv" href="https://drive.google.com/file/d/1j6jG6GTiQ9so2Y0ASKgfcmZVTVneArQc/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Download CV as PDF">
+        <i class='bx bxs-file-pdf'></i> Download CV
+      </a>
     </div>
+    </header>
+
+    <nav class="tab-nav" role="tablist" aria-label="Portfolio sections">
+      <div class="container">
+        <button class="tab-button" role="tab" aria-selected="true" data-target="experience">
+          <i class='bx bx-time'></i>
+          <span class="tab-label">Experience</span>
+        </button>
+        <button class="tab-button" role="tab" aria-selected="false" data-target="portfolio">
+          <i class='bx bx-grid-alt'></i>
+          <span class="tab-label">Portfolio</span>
+        </button>
+        <button class="tab-button" role="tab" aria-selected="false" data-target="links">
+          <i class='bx bx-link'></i>
+          <span class="tab-label">Links</span>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+
+        <section id="links" class="tab-section" role="tabpanel" aria-labelledby="links-tab" hidden>
+          <div class="links">
+            <h3 class="links-group-title">Professional</h3>
+            <a class="link-tile" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1j6jG6GTiQ9so2Y0ASKgfcmZVTVneArQc/view?usp=sharing" aria-label="View CV (PDF) in new tab">
+              <i class='bx bxs-file-pdf'></i>
+              <div>
+                <div class="label">View CV</div>
+                <div class="desc">Latest résumé and professional profile <small>(Updated Nov 2025)</small></div>
+              </div>
+            </a>
+            <a class="link-tile" href="https://priorart.ip.com/IPCOM/000273030?fbclid=PAb21jcANMrWFleHRuA2F" target="_blank" rel="noopener noreferrer" aria-label="View Research Paper on IP.com in new tab">
+              <i class='bx bxs-file-pdf'></i>
+              <div>
+                <div class="label">View Paper</div>
+        <div class="desc">Tokopedia experience — Internal Tokopedia research paper</div>
+              </div>
+            </a>
+            <a class="link-tile" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/febriwidyo" aria-label="Open LinkedIn profile in new tab">
+              <i class='bx bxl-linkedin-square'></i>
+              <div>
+                <div class="label">LinkedIn</div>
+                <div class="desc">Professional profile and experience</div>
+              </div>
+            </a>
+            <a class="link-tile" target="_blank" rel="noopener noreferrer" href="https://github.com/punokawan" aria-label="Open GitHub profile in new tab">
+              <i class='bx bxl-github'></i>
+              <div>
+                <div class="label">GitHub</div>
+                <div class="desc">Open‑source backend work and personal projects</div>
+              </div>
+            </a>
+            <h3 class="links-group-title">Other</h3>
+            <a class="link-tile" target="_blank" rel="noopener noreferrer" href="https://unjac-my.sharepoint.com/:f:/g/personal/widyoutomof_unj_ac_id/EvUB1Yto-T1EqWnRdk7Cz-kBn9xzH6LT_AWPB1EdHntt2w" aria-label="Open training and courses folder in new tab">
+              <i class='bx bxs-medal'></i>
+              <div>
+                <div class="label">Training & Courses</div>
+                <div class="desc">Certificates and continuous learning</div>
+              </div>
+            </a>
+            <h3 class="links-group-title">Social</h3>
+            <a class="link-tile" target="_blank" rel="noopener noreferrer" href="https://twitter.com/febri_widyo" aria-label="Open Twitter profile in new tab">
+              <i class='bx bxl-twitter'></i>
+              <div>
+                <div class="label">Twitter</div>
+                <div class="desc">Tech thoughts and updates</div>
+              </div>
+            </a>
+            <a class="link-tile" target="_blank" rel="noopener noreferrer" href="https://instagram.com/febriwidyo/" aria-label="Open Instagram profile in new tab">
+              <i class='bx bxl-instagram-alt'></i>
+              <div>
+                <div class="label">Instagram</div>
+                <div class="desc">Personal moments and highlights</div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section id="portfolio" class="tab-section" role="tabpanel" aria-labelledby="portfolio-tab" hidden>
+          <div class="grid">
+            <a class="card" href="#" aria-label="Sistem Informasi Uang Kuliah Tunggal UNJ">
+              <figure>
+                <img src="SIUKAT.png" alt="Sistem Informasi Uang Kuliah Tunggal UNJ" loading="lazy" />
+                <div class="overlay" aria-hidden="true"></div>
+                <figcaption>
+                  <div class="title"><i class='bx bx-code'></i> <span class="badge">Full Stack</span></div>
+                  <div class="subtitle">Sistem Informasi Uang Kuliah Tunggal UNJ</div>
+                  <div class="tags"><span class="tag">Laravel</span><span class="tag">React</span><span class="tag">MySQL</span></div>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="card" href="#" aria-label="Admin Sistem Informasi Uang Kuliah Tunggal UNJ">
+              <figure>
+                <img src="admin_SIUKAT.png" alt="Admin Sistem Informasi Uang Kuliah Tunggal UNJ" loading="lazy" />
+                <div class="overlay" aria-hidden="true"></div>
+                <figcaption>
+                  <div class="title"><i class='bx bx-code'></i> <span class="badge">Full Stack</span></div>
+                  <div class="subtitle">Admin Sistem Informasi Uang Kuliah Tunggal UNJ</div>
+                  <div class="tags"><span class="tag">Laravel</span><span class="tag">React</span><span class="tag">MySQL</span></div>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="card" href="#" aria-label="Sistem Seleksi Pascasarjana">
+              <figure>
+                <img src="SISCA.png" alt="Sistem Seleksi Pascasarjana" loading="lazy" />
+                <div class="overlay" aria-hidden="true"></div>
+                <figcaption>
+                  <div class="title"><i class='bx bx-code'></i> <span class="badge">Full Stack</span></div>
+                  <div class="subtitle">Sistem Seleksi Pascasarjana</div>
+                  <div class="tags"><span class="tag">Laravel</span><span class="tag">MySQL</span></div>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="card" href="#" aria-label="Penmaba Mandiri Jalur Prestasi Universitas Negeri Jakarta">
+              <figure>
+                <img src="Penmaba_Prestasi.png" alt="Penmaba Mandiri Jalur Prestasi UNJ" loading="lazy" />
+                <div class="overlay" aria-hidden="true"></div>
+                <figcaption>
+                  <div class="title"><i class='bx bx-code'></i> <span class="badge">Full Stack</span></div>
+                  <div class="subtitle">Penmaba Mandiri Jalur Prestasi Universitas Negeri Jakarta</div>
+                  <div class="tags"><span class="tag">Laravel</span><span class="tag">MySQL</span></div>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="card" href="#" aria-label="Penmaba Mandiri Universitas Negeri Jakarta">
+              <figure>
+                <img src="Penmaba_Mandiri.png" alt="Penmaba Mandiri UNJ" loading="lazy" />
+                <div class="overlay" aria-hidden="true"></div>
+                <figcaption>
+                  <div class="title"><i class='bx bx-cloud'></i> <span class="badge">Web Service</span></div>
+                  <div class="subtitle">Penmaba Mandiri Universitas Negeri Jakarta</div>
+                  <div class="tags"><span class="tag">Express.js</span><span class="tag">REST API</span><span class="tag">MySQL</span></div>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="card" href="#" aria-label="Penmaba Mandiri Pascasarjana Universitas Negeri Jakarta">
+              <figure>
+                <img src="Penmaba_Pasca.png" alt="Penmaba Mandiri Pascasarjana UNJ" loading="lazy" />
+                <div class="overlay" aria-hidden="true"></div>
+                <figcaption>
+                  <div class="title"><i class='bx bx-cloud'></i> <span class="badge">Web Service</span></div>
+                  <div class="subtitle">Penmaba Mandiri Pascasarjana Universitas Negeri Jakarta</div>
+                  <div class="tags"><span class="tag">Express.js</span><span class="tag">REST API</span><span class="tag">MySQL</span></div>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="card" href="#" aria-label="Sistem Input Nilai Sementara Universitas Negeri Jakarta">
+              <figure>
+                <img src="SIPUTKERAS.png" alt="Sistem Input Nilai Sementara UNJ" loading="lazy" />
+                <div class="overlay" aria-hidden="true"></div>
+                <figcaption>
+                  <div class="title"><i class='bx bx-cloud'></i> <span class="badge">Web Service</span></div>
+                  <div class="subtitle">Sistem Input Nilai Sementara Universitas Negeri Jakarta</div>
+                  <div class="tags"><span class="tag">Express.js</span><span class="tag">REST API</span><span class="tag">MySQL</span></div>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="card" href="#" aria-label="Aplikasi Ujian Seleksi Pascasarjana Universitas Negeri Jakarta">
+              <figure>
+                <img src="aplikasi_ujian.png" alt="Aplikasi Ujian Seleksi Pascasarjana UNJ" loading="lazy" />
+                <div class="overlay" aria-hidden="true"></div>
+                <figcaption>
+                  <div class="title"><i class='bx bx-mobile-alt'></i> <span class="badge">Web Service</span></div>
+                  <div class="subtitle">Aplikasi Ujian Seleksi Pascasarjana Universitas Negeri Jakarta</div>
+                  <div class="tags"><span class="tag">Express.js</span><span class="tag">REST API</span><span class="tag">MySQL</span></div>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="card" href="#" aria-label="Sistem Admin Aplikasi Ujian Seleksi Pascasarjana Universitas Negeri Jakarta">
+              <figure>
+                <img src="admin_aplikasi_ujian.png" alt="Sistem Admin Aplikasi Ujian Seleksi Pascasarjana UNJ" loading="lazy" />
+                <div class="overlay" aria-hidden="true"></div>
+                <figcaption>
+                  <div class="title"><i class='bx bx-code'></i> <span class="badge">Full Stack</span></div>
+                  <div class="subtitle">Sistem Admin Aplikasi Ujian Seleksi Pascasarjana Universitas Negeri Jakarta</div>
+                  <div class="tags"><span class="tag">Laravel</span><span class="tag">MySQL</span></div>
+                </figcaption>
+              </figure>
+            </a>
+            <a class="card" href="#" aria-label="Sistem Informasi Magang">
+              <figure>
+                <img src="SIGANG.png" alt="Sistem Informasi Magang" loading="lazy" />
+                <div class="overlay" aria-hidden="true"></div>
+                <figcaption>
+                  <div class="title"><i class='bx bx-code'></i> <span class="badge">Full Stack</span></div>
+                  <div class="subtitle">Sistem Informasi Magang</div>
+                  <div class="tags"><span class="tag">Laravel</span><span class="tag">MySQL</span></div>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+        </section>
+
+        <section id="experience" class="tab-section is-active" role="tabpanel" aria-labelledby="experience-tab">
+          <div class="timeline">
+            <article id="bytedance" class="timeline-item" aria-label="ByteDance">
+              <div class="marker" aria-hidden="true"></div>
+              <div class="card-timeline">
+                <header class="head">
+                  <div class="company">
+                    <img src="ByteDance.svg" alt="ByteDance logo" class="brand-icon" />
+                    <span class="sr-only">ByteDance</span>
+                  </div>
+                  <div class="meta">February 2024 – October 2025 · Research and Development Engineer</div>
+                </header>
+                <div class="exp-context">(Continued from Tokopedia following ByteDance’s acquisition and integration of TikTok Shop and Tokopedia operations)</div>
+                  <ul class="bullets">
+                    <li>Engineered and optimized high‑throughput Golang backend systems, improving processing efficiency by 35% across e‑commerce operations handling 10M+ daily API calls.</li>
+                    <li>Authored detailed system design and technical documentation, standardizing architecture practices across 5+ cross‑functional teams and reducing post‑launch bugs by 15%.</li>
+                    <li>Enhanced data synchronization frameworks, boosting data reliability and consistency by 40% across distributed microservices.</li>
+                    <li>Improved API communication performance, cutting service latency by 25% through caching, batching, and connection pooling optimizations.</li>
+                    <li>Led cross‑regional integration initiatives, enabling multi‑region scalable deployments and reducing operational overhead by 20%.</li>
+                    <li>Collaborated with product and infrastructure teams to enhance observability and uptime, sustaining 99.9% service availability across multi‑region environments.</li>
+                  </ul>
+                <a class="readmore" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1j6jG6GTiQ9so2Y0ASKgfcmZVTVneArQc/view?usp=sharing">Read more in CV <span class="sr-only">(opens in new tab)</span> <i class='bx bx-right-arrow-alt' aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <article id="tokopedia" class="timeline-item" aria-label="Tokopedia">
+              <div class="marker" aria-hidden="true"></div>
+              <div class="card-timeline">
+                <header class="head">
+                  <div class="company">
+                    <span class="brand-mix">
+                      <img src="Tokopedia.svg" alt="Tokopedia icon" class="brand-icon brand-logo" />
+                      <img src="Tokopedia_text.svg" alt="Tokopedia wordmark" class="brand-icon brand-text" />
+                    </span>
+                    <span class="sr-only">Tokopedia</span>
+                  </div>
+                  <div class="meta">October 2021 – January 2024 · Software Engineer</div>
+                </header>
+                <div class="exp-context">(Transitioned to ByteDance following Tokopedia–TikTok Shop integration)</div>
+                  <ul class="bullets">
+                    <li>Developed and maintained core backend services—user‑address, shop‑location, and region‑maps—serving millions of daily API requests within the Fulfillment Platform.</li>
+                    <li>Architected and optimized rates/ongkirapp and shipper‑service, improving delivery rate precision and reducing computation latency by 30%.</li>
+                    <li>Enhanced Delivery orchestration systems, improving real‑time courier allocation and delivery tracking efficiency by 25%.</li>
+                    <li>Implemented NSQ‑based asynchronous messaging, handling millions of distributed events daily for task queuing and inter‑service communication.</li>
+                    <li>Authored comprehensive system design and impact analysis documents before implementation, aligning with service owners for risk‑free, scalable integrations.</li>
+                    <li>Supported migration from GCP to ByteCloud, achieving significant cost savings while maintaining 99.9% uptime.</li>
+                    <li>Published internal research paper — “Data Propagation and Synchronization Framework To Reduce Service Dependency Call” — reducing inter‑service dependency by 40% and improving data propagation speed. <a class="paper-link" href="https://priorart.ip.com/IPCOM/000273030?fbclid=PAb21jcANMrWFleHRuA2F" target="_blank" rel="noopener noreferrer">Read <span class="sr-only">(opens in new tab)</span> <i class='bx bx-link-external' aria-hidden="true"></i></a></li>
+                  </ul>
+                <a class="readmore" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1j6jG6GTiQ9so2Y0ASKgfcmZVTVneArQc/view?usp=sharing">Read more in CV <span class="sr-only">(opens in new tab)</span> <i class='bx bx-right-arrow-alt' aria-hidden="true"></i></a>
+              </div>
+            </article>
+
+            <article id="upt-tik-unj" class="timeline-item" aria-label="Unit Pelaksana Teknis (UPT) TIK UNJ">
+              <div class="marker" aria-hidden="true"></div>
+              <div class="card-timeline">
+                <header class="head">
+                  <div class="company">
+                    <i class='bx bx-building'></i>
+                    <span>UPT TIK UNJ</span>
+                  </div>
+                  <div class="meta">June 2018 – December 2021 · Web Developer</div>
+                </header>
+                <ul class="bullets">
+                    <li>Developed and maintained university‑wide systems using Laravel, Express.js, and React.js, supporting digital transformation for admission and academic workflows.</li>
+                    <li>Engineered integrated Student Admission & Academic Information Systems (Penmaba, SIAKAD, PPG, SNMPTN, RPL), cutting manual workload by 80% and improving data accuracy by 90%.</li>
+                    <li>Built Labschool Entrance Exam Application with real‑time student progress tracking, supporting thousands of concurrent participants during exams.</li>
+                  </ul>
+                <a class="readmore" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1j6jG6GTiQ9so2Y0ASKgfcmZVTVneArQc/view?usp=sharing">Read more in CV <span class="sr-only">(opens in new tab)</span> <i class='bx bx-right-arrow-alt' aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="main.js" defer></script>
   </body>
-  <script>
-    const user = document.querySelector(".con-user");
-    const menu = document.querySelector(".con-menu");
-    const contents = document.querySelector(".con-contents");
-    const links = document.querySelector(".con-contents .con-links");
-    const posts = document.querySelector(".con-contents .con-posts");
-    window.addEventListener("load", function (event) {
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-      setTimeout(function () {
-        window.scrollTo(0, 1);
-      }, 0);
-      const h = window.innerHeight - menu.clientHeight - user.clientHeight;
-      contents.style.height = `${h}px`;
-      links.style.height = `${h}px`;
-      posts.style.height = `${h}px`;
-    });
-
-    function handleClick(evt, name) {
-      const items = document.querySelectorAll(".con-menu button");
-      const el = evt.target;
-      items.forEach((item) => {
-        item.classList.remove("active");
-      });
-      el.classList.add("active");
-      const elScroll = document.querySelector(`.${name}`);
-      contents.scrollTo(elScroll.offsetLeft, 0);
-    }
-
-    contents.addEventListener("scroll", (evt) => {
-      if (
-        evt.target.scrollLeft > window.innerWidth / 2 &&
-        evt.target.scrollLeft < window.innerWidth + window.innerWidth / 2
-      ) {
-        menu.querySelector("button:nth-child(1)").classList.remove("active");
-        menu.querySelector("button:nth-child(2)").classList.add("active");
-        // menu.querySelector("button:nth-child(3)").classList.remove("active");
-      } else if (evt.target.scrollLeft < window.innerWidth / 2) {
-        menu.querySelector("button:nth-child(1)").classList.add("active");
-        menu.querySelector("button:nth-child(2)").classList.remove("active");
-        // menu.querySelector("button:nth-child(3)").classList.remove("active");
-      } else if (
-        evt.target.scrollLeft >
-        window.innerWidth + window.innerWidth / 2
-      ) {
-        menu.querySelector("button:nth-child(1)").classList.remove("active");
-        menu.querySelector("button:nth-child(2)").classList.remove("active");
-        // menu.querySelector("button:nth-child(3)").classList.add("active");
-      }
-    });
-  </script>
-
-  <style>
-    body {
-      --primary: 25, 91, 255;
-      --color: 44, 62, 80;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      height: 100vh;
-      background: #f4f7f8;
-      height: calc(var(--vh, 1vh) * 100);
-      overflow: hidden;
-      color: rgb(var(--color));
-    }
-    * {
-      list-style: none;
-      outline: none;
-      padding: 0;
-      margin: 0;
-      font-family: "Poppins", sans-serif;
-      box-sizing: border-box;
-    }
-    .content {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      overflow: hidden;
-    }
-    .con-user {
-      padding-top: 10px;
-      width: 100%;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      background: #fff;
-      padding-bottom: 10px;
-      border-radius: 0px 0px 40px 0px;
-    }
-    .con-user .title {
-      text-align: center;
-      width: 100%;
-    }
-    .con-user .title h1 {
-      font-size: 1.1rem;
-      padding: 0px 0px;
-    }
-    .con-user .title p {
-      font-size: 0.9rem;
-      opacity: 0.6;
-      padding: 6px 10px;
-    }
-    .con-user .title p a {
-      color: rgb(var(--text));
-    }
-    .avatar {
-      width: 150px;
-      background-image: url('Febrianto1.jpg');
-      -ms-background-position-x: center;
-      -ms-background-position-y: center;
-      background-size: 150px;
-      height: 150px;
-      border-radius: 30px;
-    }
-    .avatar img {
-      width: 150px;
-      overflow: hidden;
-      margin-top: -20px;
-    }
-    .con-menu {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px;
-      max-width: 500px;
-      margin: auto;
-      width: 100%;
-      position: relative;
-      z-index: 10;
-      box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, 0.08);
-      border-radius: 0px 0px 30px 30px;
-    }
-    .con-menu button {
-      padding: 12px;
-      width: calc(50% - 4px);
-      border: 0px;
-      background: transparent;
-      font-weight: bold;
-      color: rgb(var(--text));
-      font-size: 1rem;
-      transition: all 0.25s ease;
-      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
-      border-radius: 16px;
-      z-index: 2;
-    }
-    .con-menu button.active {
-      background: #fff;
-      box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
-      color: rgb(var(--primary));
-      /* transform: translate(0,-5px); */
-    }
-    .con-contents {
-      width: 100%;
-      overflow-x: auto;
-      overflow-y: hidden;
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-      flex: 1;
-      height: 100%;
-      position: relative;
-      max-width: 500px;
-    }
-    .con-posts {
-      min-width: 100%;
-      scroll-snap-align: center;
-      overflow: auto;
-      padding-bottom: 30px;
-      max-width: 500px;
-    }
-    .con-posts .post {
-      width: calc(100% - 40px);
-      overflow: hidden;
-      box-sizing: border-box;
-      display: block;
-      margin: 20px;
-      position: relative;
-      color: rgb(var(--text));
-      border-radius: 30px;
-      box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-    .con-file {
-      width: 100%;
-      padding-bottom: 100%;
-      height: 0;
-    }
-    .con-posts .post img {
-      width: 100%;
-      position: absolute;
-      top: 40%;
-      left: 0px;
-      transform: translate(0, -50%);
-    }
-    .con-posts .post footer {
-      position: absolute;
-      bottom: 0px;
-      z-index: 10;
-      padding: 10px 20px;
-    }
-    .con-posts .post footer h3 {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-    }
-    .con-posts .post footer h3 i {
-      margin-right: 5px;
-      font-size: 1.4rem;
-    }
-    .con-posts .post .effect {
-      position: absolute;
-      bottom: 0px;
-      height: 150px;
-      width: 100%;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 30%,
-        rgba(0, 0, 0, 0.001) 100%
-      );
-    }
-    .con-links {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: column;
-      padding: 15px 20px;
-      padding-top: 0px;
-      max-width: 500px;
-      width: 100%;
-      margin: auto;
-      min-width: 100%;
-      scroll-snap-align: center;
-      flex: 1;
-      overflow: auto;
-      padding-top: 20px;
-    }
-    .con-links a {
-      display: block;
-      width: 100%;
-      padding: 18px 22px;
-      text-decoration: none;
-      font-size: 1rem;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgb(var(--primary));
-      margin-bottom: 16px;
-      border-radius: 25px;
-      position: relative;
-      box-shadow: 0px 10px 30px 0px rgba(var(--primary), 0.15);
-    }
-    .con-links a:last-child {
-      margin-bottom: 40px;
-    }
-    .con-links a img {
-      max-width: 22px;
-      position: absolute;
-      left: 20px;
-    }
-    .con-links a svg {
-      width: 22px;
-      fill: #fff;
-      position: absolute;
-      left: 20px;
-    }
-    .con-links a i {
-      font-size: 1.6rem;
-      position: absolute;
-      left: 20px;
-      /* margin-right: 8px; */
-    }
-    .con-links a span {
-      text-align: center;
-    }
-    .con-links a span p {
-      font-size: 0.8rem;
-    }
-
-    /*! elementor - v2.9.14 - 21-07-2020 */
-    .dialog-widget-content {
-      background-color: #fff;
-      position: absolute;
-      -webkit-border-radius: 3px;
-      border-radius: 3px;
-      -webkit-box-shadow: 2px 8px 23px 3px rgba(0, 0, 0, 0.2);
-      box-shadow: 2px 8px 23px 3px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-    }
-    .dialog-message {
-      font-size: 12px;
-      line-height: 1.5;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-    .dialog-type-lightbox {
-      position: fixed;
-      height: 100%;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.8);
-      z-index: 9999;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-    .dialog-type-lightbox .dialog-widget-content {
-      margin: auto;
-      width: 375px;
-    }
-    .dialog-type-lightbox .dialog-header {
-      font-size: 15px;
-      color: #495157;
-      padding: 30px 0 10px;
-      font-weight: 500;
-    }
-    .dialog-type-lightbox .dialog-message {
-      padding: 0 30px 30px;
-      min-height: 50px;
-    }
-    .dialog-type-lightbox:not(.elementor-popup-modal) .dialog-header,
-    .dialog-type-lightbox:not(.elementor-popup-modal) .dialog-message {
-      text-align: center;
-    }
-    .dialog-type-lightbox .dialog-buttons-wrapper {
-      border-top: 1px solid #e6e9ec;
-      text-align: center;
-    }
-    .dialog-type-lightbox .dialog-buttons-wrapper > .dialog-button {
-      font-family: Roboto, Arial, Helvetica, Verdana, sans-serif;
-      width: 50%;
-      border: none;
-      background: none;
-      color: #6d7882;
-      font-size: 15px;
-      cursor: pointer;
-      padding: 13px 0;
-      outline: 0;
-    }
-    .dialog-type-lightbox .dialog-buttons-wrapper > .dialog-button:hover {
-      background-color: #f4f6f7;
-    }
-    .dialog-type-lightbox .dialog-buttons-wrapper > .dialog-button.dialog-ok {
-      color: #b01b1b;
-    }
-    .dialog-type-lightbox
-      .dialog-buttons-wrapper
-      > .dialog-button.dialog-take_over {
-      color: #39b54a;
-    }
-    .dialog-type-lightbox .dialog-buttons-wrapper > .dialog-button:active {
-      background-color: rgba(230, 233, 236, 0.5);
-    }
-    .dialog-type-lightbox
-      .dialog-buttons-wrapper
-      > .dialog-button::-moz-focus-inner {
-      border: 0;
-    }
-    .dialog-close-button {
-      cursor: pointer;
-      position: absolute;
-      margin-top: 15px;
-      right: 15px;
-      font-size: 15px;
-      line-height: 1;
-    }
-    .dialog-close-button:not(:hover) {
-      opacity: 0.4;
-    }
-    .dialog-alert-widget .dialog-buttons-wrapper > button {
-      width: 100%;
-    }
-    .dialog-confirm-widget .dialog-button:first-child {
-      border-right: 1px solid #e6e9ec;
-    }
-    .dialog-prevent-scroll {
-      overflow: hidden;
-      max-height: 100vh;
-    }
-    @media (min-width: 1024px) {
-      body.admin-bar .dialog-lightbox-widget {
-        height: calc(100vh - 32px);
-      }
-    }
-    @media (max-width: 1024px) {
-      body.admin-bar .dialog-type-lightbox {
-        position: -webkit-sticky;
-        position: sticky;
-        height: 100vh;
-      }
-    }
-    
-
-    .tooltip {
-      position: relative;
-      display: inline-block;
-      border-bottom: 1px dotted black;
-    }
-    .tooltiptext {
-      visibility: hidden;
-      width: 120px;
-      background-color: black;
-      color: #fff;
-      text-align: center;
-      border-radius: 6px;
-      padding: 5px 0;
-      font-size: small;
-
-      /* Position the tooltip */
-      position: absolute;
-      z-index: 1;
-    }
-    /* .tooltip:hover .tooltiptext {
-      visibility: visible;
-    } */
-  </style>
 </html>
