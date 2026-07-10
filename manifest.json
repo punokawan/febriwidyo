@@ -1,11 +1,18 @@
 {
-  "name": "Links Febriwidyo",
-  "short_name": "febriwidyo - instagram - github - twitter",
-  "description": "Links Febriwidyo",
-  "theme_color": "#fff",
-  "background_color": "white",
+  "name": "Febrianto Widyoutomo — Portfolio",
+  "short_name": "Febrianto",
+  "description": "Backend systems engineering and SaaS product portfolio of Febrianto Widyoutomo.",
+  "theme_color": "#07110e",
+  "background_color": "#07110e",
   "display": "standalone",
-  "Scope": "./",
-  "start_url": "index.html",
-  "splash_pages": null
+  "scope": "./",
+  "start_url": "./index.html",
+  "icons": [
+    {
+      "src": "favicon-green.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
 }
